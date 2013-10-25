@@ -1,5 +1,6 @@
-<h1>Welcome</h1>
+<% @posts.each do |post| %>
 
-<p>This is the landing page for my baking blog made with Ruby</p>
-
-<p>Post in blog will go here</p>
+<%= render 'posts/post', post:post %>
+<br>
+<br>
+<% end %>
