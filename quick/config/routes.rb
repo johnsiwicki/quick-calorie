@@ -1,6 +1,7 @@
 Quick::Application.routes.draw do
   resources :posts
-
+  resources :hearts
+  
   get "about" => "pages#about"
   root 'pages#welcome'
   
